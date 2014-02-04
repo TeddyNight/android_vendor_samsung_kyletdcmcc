@@ -62,6 +62,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mint/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/mint/proprietary/lib/libMali.so:system/lib/libMali.so \
     vendor/samsung/mint/proprietary/lib/libUMP.so:system/lib/libUMP.so \
+    vendor/samsung/mint/proprietary/etc/Volume.db:system/etc/Volume.db \
+    vendor/samsung/mint/proprietary/lib/hw/audio.primary.sc8810.so:system/lib/hw/audio.primary.sc8810.so \
+    vendor/samsung/mint/proprietary/lib/hw/audio_policy.sc8810.so:system/lib/hw/audio_policy.sc8810.so \
+    vendor/samsung/mint/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
+    vendor/samsung/mint/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
+    vendor/samsung/mint/proprietary/lib/libLifevibes_lvvefs.so:system/lib/libLifevibes_lvvefs.so \
+    vendor/samsung/mint/proprietary/lib/liblvvewrapper.so:system/lib/liblvvewrapper.so \
+    vendor/samsung/mint/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+    vendor/samsung/mint/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+    vendor/samsung/mint/proprietary/lib/lib_SamsungRec_V02002.so:system/lib/lib_SamsungRec_V02002.so \
+    vendor/samsung/mint/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    vendor/samsung/mint/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
+    vendor/samsung/mint/proprietary/lib/libvbeffect.so:system/lib/libvbeffect.so \
+    vendor/samsung/mint/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
+    vendor/samsung/mint/proprietary/lib/libvolumemanager.so:system/lib/libvolumemanager.so \
+    vendor/samsung/mint/proprietary/lib/libxlist.so:system/lib/libxlist.so \
     vendor/samsung/mint/proprietary/etc/pvplayer.cfg:system/etc/pvplayer.cfg \
     vendor/samsung/mint/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
     vendor/samsung/mint/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
