@@ -71,7 +71,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mint/proprietary/lib/liblvvewrapper.so:system/lib/liblvvewrapper.so \
     vendor/samsung/mint/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     vendor/samsung/mint/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-    vendor/samsung/mint/proprietary/lib/lib_SamsungRec_V02002.so:system/lib/lib_SamsungRec_V02002.so \
+    vendor/samsung/mint/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
+    vendor/samsung/mint/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
+    vendor/samsung/mint/proprietary/lib/libvolumeprofilesystem.so:system/lib/libvolumeprofilesystem.so \
     vendor/samsung/mint/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/mint/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
     vendor/samsung/mint/proprietary/lib/libvbeffect.so:system/lib/libvbeffect.so \
@@ -100,4 +102,52 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/mint/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/mint/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
     vendor/samsung/mint/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/mint/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so
+    vendor/samsung/mint/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/mint/proprietary/etc/audio/LVVEFS_Rx_Configuration.txt:system/etc/audio/LVVEFS_Rx_Configuration.txt \
+    vendor/samsung/mint/proprietary/etc/audio/LVVEFS_Tx_Configuration.txt:system/etc/audio/LVVEFS_Tx_Configuration.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECFMC_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_SECFMC_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECFMC_EARPIECE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECFMC_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECFMC_SPEAKER_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECFMC_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECFMC_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECFMC_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECFMC_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECFMC_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECVOIP_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_SECVOIP_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECVOIP_EARPIECE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECVOIP_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECVOIP_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECVOIP_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Rx_ControlParams_SECVOIP_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Rx_ControlParams_SECVOIP_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECFMC_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_SECFMC_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECFMC_EARPIECE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECFMC_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECFMC_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECFMC_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECFMC_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECFMC_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECFMC_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECFMC_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_SECVOIP_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_EARPIECE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Tx_ControlParams_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt:system/etc/audio/Tx_ControlParams_SECVOIP_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/LVVEFS_Rx_Configuration.txt:system/etc/audio_VR/LVVEFS_Rx_Configuration.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/LVVEFS_Tx_Configuration.txt:system/etc/audio_VR/LVVEFS_Tx_Configuration.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Rx_ControlParams_VR_BLUETOOTH_HEADSET.txt:system/etc/audio_VR/Rx_ControlParams_VR_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Rx_ControlParams_VR_EARPIECE_WIDEBAND.txt:system/etc/audio_VR/Rx_ControlParams_VR_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Rx_ControlParams_VR_SPEAKER_WIDEBAND.txt:system/etc/audio_VR/Rx_ControlParams_VR_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Rx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio_VR/Rx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Rx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio_VR/Rx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Tx_ControlParams_VR_BLUETOOTH_HEADSET.txt:system/etc/audio_VR/Tx_ControlParams_VR_BLUETOOTH_HEADSET.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Tx_ControlParams_VR_EARPIECE_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_EARPIECE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Tx_ControlParams_VR_SPEAKER_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_SPEAKER_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt \
+    vendor/samsung/mint/proprietary/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt
