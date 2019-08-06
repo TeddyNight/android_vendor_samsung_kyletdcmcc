@@ -31,14 +31,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/bin/slogctl:system/bin/slogctl \
     vendor/samsung/kyletdcmcc/proprietary/bin/sprd_monitor:system/bin/sprd_monitor \
     vendor/samsung/kyletdcmcc/proprietary/bin/tar:system/bin/tar \
-    vendor/samsung/kyletdcmcc/proprietary/bin/rild_sp:system/bin/rild_sp \
+    vendor/samsung/kyletdcmcc/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/kyletdcmcc/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/kyletdcmcc/proprietary/bin/phoneserver:system/bin/phoneserver \
-    vendor/samsung/kyletdcmcc/proprietary/bin/phoneserver_2sim:system/bin/phoneserver_2sim \
     vendor/samsung/kyletdcmcc/proprietary/etc/DiamondVoice.txt:system/etc/DiamondVoice.txt \
     vendor/samsung/kyletdcmcc/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/kyletdcmcc/proprietary/bin/bcm4330.hcd:system/bin/bcm4330.hcd \
@@ -61,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libUMP.so:system/lib/libUMP.so \
     vendor/samsung/kyletdcmcc/proprietary/etc/Volume.db:system/etc/Volume.db \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/audio.primary.sc8810.so:system/lib/hw/audio.primary.sc8810.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/audio_policy.sc8810.so:system/lib/hw/audio_policy.sc8810.so \
