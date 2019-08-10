@@ -18,6 +18,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/bin/at_distributor:system/bin/at_distributor \
     vendor/samsung/kyletdcmcc/proprietary/bin/bluetoothd:system/bin/bluetoothd \
     vendor/samsung/kyletdcmcc/proprietary/bin/calibration_init:system/bin/calibration_init \
+    vendor/samsung/kyletdcmcc/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    vendor/samsung/kyletdcmcc/proprietary/etc/devicevolume.xml:system/etc/devicevolume.xml \
+    vendor/samsung/kyletdcmcc/proprietary/etc/formatvolume.xml:system/etc/formatvolume.xml \
+    vendor/samsung/kyletdcmcc/proprietary/etc/default_gain.conf:system/etc/default_gain.conf \
+    vendor/samsung/kyletdcmcc/proprietary/etc/tinyucm.conf:system/etc/tinyucm.conf \
     vendor/samsung/kyletdcmcc/proprietary/bin/cpu:system/bin/cpu \
     vendor/samsung/kyletdcmcc/proprietary/bin/engmodemclient:system/bin/engmodemclient \
     vendor/samsung/kyletdcmcc/proprietary/bin/engpcclient:system/bin/engpcclient \
@@ -31,13 +36,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/bin/slogctl:system/bin/slogctl \
     vendor/samsung/kyletdcmcc/proprietary/bin/sprd_monitor:system/bin/sprd_monitor \
     vendor/samsung/kyletdcmcc/proprietary/bin/tar:system/bin/tar \
-    vendor/samsung/kyletdcmcc/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/kyletdcmcc/proprietary/bin/rild_sp:system/bin/rild_sp \
     vendor/samsung/kyletdcmcc/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/kyletdcmcc/proprietary/bin/phoneserver:system/bin/phoneserver \
+    vendor/samsung/kyletdcmcc/proprietary/bin/phoneserver_2sim:system/bin/phonserver_2sim \
     vendor/samsung/kyletdcmcc/proprietary/etc/DiamondVoice.txt:system/etc/DiamondVoice.txt \
     vendor/samsung/kyletdcmcc/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/kyletdcmcc/proprietary/bin/bcm4330.hcd:system/bin/bcm4330.hcd \
@@ -56,24 +63,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/sensors.sc8810.so:system/lib/hw/sensors.sc8810.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/gralloc.sc8810.so:system/lib/hw/gralloc.sc8810.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/hwcomposer.sc8810.so:system/lib/hw/hwcomposer.sc8810.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/samsung/kyletdcmcc/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libMali.so:system/lib/libMali.so \
     vendor/samsung/kyletdcmcc/proprietary/etc/Volume.db:system/etc/Volume.db \
-    vendor/samsung/kyletdcmcc/proprietary/lib/hw/audio.primary.sc8810.so:system/lib/hw/audio.primary.sc8810.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/hw/audio_policy.sc8810.so:system/lib/hw/audio_policy.sc8810.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libLifevibes_lvvefs.so:system/lib/libLifevibes_lvvefs.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/liblvvewrapper.so:system/lib/liblvvewrapper.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libvolumeprofilesystem.so:system/lib/libvolumeprofilesystem.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libvbeffect.so:system/lib/libvbeffect.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libvolumemanager.so:system/lib/libvolumemanager.so \
@@ -84,6 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/lib/libomx_m4venc_sharedlibrary.so:system/lib/libomx_m4venc_sharedlibrary.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libopencore_common.so:system/lib/libopencore_common.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libbinder.so:system/lib/libbinder.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libstagefright_soft_h264dec_sprd.so:system/lib/libstagefright_soft_h264dec_sprd.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libstagefright_soft_mpeg4dec_sprd.so:system/lib/libstagefright_soft_mpeg4dec_sprd.so \
@@ -98,9 +96,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/lib/libnvaccessor.so:system/lib/libnvaccessor.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/hw/camera.sc8810.so:system/lib/hw/camera.sc8810.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
     vendor/samsung/kyletdcmcc/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/kyletdcmcc/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio/LVVEFS_Rx_Configuration.txt:system/etc/audio/LVVEFS_Rx_Configuration.txt \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio/LVVEFS_Tx_Configuration.txt:system/etc/audio/LVVEFS_Tx_Configuration.txt \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt:system/etc/audio/Rx_ControlParams_BLUETOOTH_HEADSET.txt \
@@ -148,4 +147,31 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio_VR/Tx_ControlParams_VR_EARPIECE_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_EARPIECE_WIDEBAND.txt \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio_VR/Tx_ControlParams_VR_SPEAKER_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_SPEAKER_WIDEBAND.txt \
     vendor/samsung/kyletdcmcc/proprietary/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADPHONE_WIDEBAND.txt \
-    vendor/samsung/kyletdcmcc/proprietary/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt
+    vendor/samsung/kyletdcmcc/proprietary/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt:system/etc/audio_VR/Tx_ControlParams_VR_WIRED_HEADSET_WIDEBAND.txt \
+    vendor/samsung/kyletdcmcc/proprietary/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/kyletdcmcc/proprietary/bin/lpmkey:system/bin/lpmkey \
+    vendor/samsung/kyletdcmcc/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/kyletdcmcc/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
